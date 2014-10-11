@@ -5,6 +5,10 @@ application up and running.
 
 Things you may want to cover:
 
+## Bloccit: a Reddit clone to teach the fundmentals of web development and Rails 4.
+
+Made with my mentor at [Bloc](http://bloc.io).
+
 * Ruby version
 
 * System dependencies
