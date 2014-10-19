@@ -25,6 +25,8 @@ Made with my mentor at [Bloc](http://bloc.io).
 
 * Deployment instructions
 
+* Setup - add config/application.yml - copy config/application.example.yml and add personal SENDGRID_USERNAME, SENDGRID_PASSWORD, DEVISE_SECRET_KEY
+
 * ...
 
 
