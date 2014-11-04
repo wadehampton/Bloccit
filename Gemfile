@@ -38,6 +38,7 @@ gem 'faker'
 gem 'devise'
 gem 'figaro', '1.0'
 gem 'pundit'
+gem 'redcarpet'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
