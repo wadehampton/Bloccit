@@ -39,6 +39,10 @@ gem 'devise'
 gem 'figaro', '1.0'
 gem 'pundit'
 gem 'redcarpet'
+gem 'fog'
+gem 'carrierwave'
+gem 'mini_magick'
+
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
