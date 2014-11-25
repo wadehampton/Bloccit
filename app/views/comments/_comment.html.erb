@@ -1,3 +1,9 @@
 <% post.comments.each do |comment| %>
   <div><%= comment.body %></div>
+
+  <% if current_user %>
+    <%= flash[:notice] = "Comment successfully saved!" %>
+  <% else %>
+    <%= flash[:notice] = "Please sign in!" %>
+    <% end %>
 <% end %>
