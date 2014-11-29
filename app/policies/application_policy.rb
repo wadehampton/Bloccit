@@ -50,6 +50,12 @@ class ApplicationPolicy
       scope
     end
   end
+
+  private
+
+  def can_moderate?(user, record)
+    # extract logic here
+  end
 end
 
 

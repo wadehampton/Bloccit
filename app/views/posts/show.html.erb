@@ -14,14 +14,17 @@
     </small>
     <p><%= markdown @post.body %></p>
 
-    <%= render partial: 'comments/comment', locals: {post: @post} %>
-    <%= render partial: 'comments/form', locals: {topic: @topic, post: @post} %>
+    <%= render partial: 'comments/comment', locals: { post: @post } %>
+    <%= render partial: 'comments/form', locals: { topic: @topic, post: @post } %>
   </div>
 
   <div class="col-md-4">
     <% if policy(@post).edit? %>
       <%= link_to "Edit", edit_topic_post_path(@topic, @post), class: 'btn btn-success' %>
   <% end %>
+    <% if policy(@post).destroy? %>
+      <%= link_to "Delete Post", [@topic, @post], method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to delete post?' } %>
+    <% end %>
  </div>
 </div>
 

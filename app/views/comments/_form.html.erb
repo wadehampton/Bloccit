@@ -4,7 +4,7 @@
 
 
 
-<%= form_for [topic, post, post.comments.new] do |f| %>
+<%= form_for [post, post.comments.new] do |f| %>
   <%= f.text_area :body %><br/>
   <%= f.submit %>
 <% end %>
